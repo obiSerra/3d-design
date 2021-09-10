@@ -2,7 +2,7 @@
   (:require [scad-clj.scad :as scad]
             [scad-clj.model :as model]))
 
-(def _base-path "/mnt/c/Users/rober/Documents/3d-designs/")
+(def _base-path "scad-files/")
 
 (defn save-file 
   ([file-name shapes] (save-file file-name shapes false))
