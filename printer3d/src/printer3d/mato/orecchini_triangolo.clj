@@ -1,7 +1,7 @@
-(ns printer3d.orecchini-triangolo
+(ns printer3d.mato.orecchini-triangolo
   (:require 
             [scad-clj.model :as mdl]
-            [printer3d.common :refer [hook-circle gen-file]]))
+            [printer3d.mato.common :refer [hook-circle gen-file]]))
 
 (defn triangle [t-side hole]
   (let [half-s (/ t-side 2)
@@ -33,4 +33,7 @@
   ;(gen-file "scad-files/triangolo-original.scad" (mdl/render (earrings {:side 200 :hole 7/10 :height 5 :sec-translate 70})))
   (gen-file "scad-files/triangolo-cerchi.scad" (mdl/render (triangolo-cerchi {:side 200 :hole 7/10 :height 5 :sec-translate 70})))
   
+  (println "hello")
+  ;; => nil
+
   )

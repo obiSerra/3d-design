@@ -14,4 +14,6 @@ pom.xml.asc
 
 scad-files/
 .lsp
-.calva
+.calva/
+.clj-kondo/
+.lsp
